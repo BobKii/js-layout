@@ -1,0 +1,50 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<div class="page">
+    <header class="header">
+        <button class="button">
+            <img src="/svg/header__back.svg" width="24px" height="24px" alt="arrow-back">
+        </button>
+        <button class="button">
+            <img src="/svg/header__avatar.svg" width="24px" height="24px" alt="avatar">
+        </button>
+    </header>
+
+    <h1 class="title">Мій блог</h1>
+
+    <main class="post__list">
+        <div class="post button">
+            <div class="post__header">
+                <div class="post__category-list">
+                    <span class="post__category post__category--1">Важливо</span>
+                    <span class="post__category post__category--2">Нова</span>
+                </div>
+                <span class="post__date">12.12</span>
+            </div>
+            <p class="post__info">На цьому місці повинно бути щось важливе, але не на часі</p>
+        </div>
+        <div class="post button post--viewed">
+            <div class="post__header">
+                <div class="post__category-list">
+                    <span class="post__category post__category--1">Важливо</span>
+                </div>
+                <span class="post__date">11.12</span>
+            </div>
+            <p class="post__info">Ми хотіли Ми хотіли Ми хотіли Ми хотіли Ми хотіли Ми хотіли Ми хотіли Ми хотіли
+            </p>
+        </div>
+    </main>
+
+</div>
+
+
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+    Адже наш layout/default.hbs має вже структуру HTML
+    }}
