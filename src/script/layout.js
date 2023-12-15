@@ -46,3 +46,18 @@ export const createHeader = () => {
 
   return header;
 };
+
+// ===
+
+export const createImgElement = (src, className) => {
+  if (src) {
+    const elem = document.createElement("img");
+    elem.src = src;
+    if (className) {
+      elem.className = className;
+    }
+    return elem;
+  } else {
+    return null;
+  }
+};
